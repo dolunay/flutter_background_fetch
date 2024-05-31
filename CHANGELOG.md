@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.3.4 &mdash; 2024-05-03
+* Change return-type of `BackgroundFetch.finish` from `void` to `Future<void>`.
+
+## 1.3.3 &mdash; 2024-04-22
+* [iOS] Code-sign `TSBackgroundFetch.xcframework` with new Apple Organization (*9224-2932 Quebec Inc*) certificate.
+
+## 1.3.2 &mdash; 2024-03-23
+* [iOS] codesign `TSBackgroundFetch.xcframework`.
+* [iOS] Add `PrivacyInfo.xcprivacy` into `.podfile` config.
+  
+## 1.3.1 &mdash; 2024-03-20
+* [iOS] Move `PrivacyInfo` -> `TSBackgroundFetch.xcframework`.
+
+## 1.3.0 &mdash; 2024-03-19
+* [iOS] Implement new [iOS Privacy Manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=objc)
+
+## 1.2.4 &mdash; 2024-03-07
+* [iOS] Remove reference to symbol `BGHealthResearchTask` for now
+
 ## 1.2.3 &mdash; 2024-02-09
 * [iOS] ensure `scheduleTask` callback is executed on main-thread.
 * [Android] Update Android Setup Instructions for `flutter >= 3.19.0` (New Android Architecture).
